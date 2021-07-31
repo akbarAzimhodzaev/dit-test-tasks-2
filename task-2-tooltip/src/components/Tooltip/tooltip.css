@@ -1,0 +1,61 @@
+.dit-tooltip {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.85);
+    color: rgb(255, 255, 255);
+    padding: 4px;
+    border-radius: 4px;
+    width: 200px;
+    box-sizing: border-box;
+    font-size: 12px;
+    text-align: center;
+}
+
+.dit-tooltip:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+}
+
+.dit-tooltip.placement-left:after {
+    top: 50%;
+    right: -5px;
+    margin-top: -5px;
+    border-width: 5px 0 5px 5px;
+    border-left-color: #000;
+}
+
+.dit-tooltip.placement-top:after {
+    bottom: -5px;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px 5px 0;
+    border-top-color: #000;
+}
+
+.dit-tooltip.placement-right:after {
+    top: 50%;
+    left: -5px;
+    margin-top: -5px;
+    border-width: 5px 5px 5px 0;
+    border-right-color: #000;
+}
+
+.dit-tooltip.placement-bottom:after {
+    top: -5px;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 0 5px 5px;
+    border-bottom-color: #000;
+}
+
+.dit-close {
+    position: absolute;
+    right: 5px;
+    top: 2px;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+}
